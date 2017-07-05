@@ -412,7 +412,8 @@
 
         <ul class="buttonlist__list list-unstyled">
             <li>
-                <a href="https://apcfinancing.alabamapower.com/Customer/FinancingApplication.aspx" target="_blank" class="buttonlist__link ">Heat Pump Financing</a>
+                <!-- <a href="https://apcfinancing.alabamapower.com/Customer/FinancingApplication.aspx" target="_blank" class="buttonlist__link ">Heat Pump Financing</a> -->
+                <a href="javascript:showForm()" target="_blank" class="buttonlist__link ">Heat Pump Financing</a>
             </li>
         </ul>
     </div>
@@ -420,9 +421,17 @@
 </div>
 </div>
 
-<div>
+<div id="appianContainer">
   <appian-action processModelUuid="0002df17-2239-8000-f92f-7f0000014e7a"></appian-action>
 </div>
+
+<script>
+  $("#appianContainer").hide();
+
+  function showForm() {
+    $("#appianContainer").show();
+  }
+</script>
 <div class="videoscomp section">
 
 <div id="bha-f5481f2a-9df3-4ddf-a7dd-891d3478c3e1-content-video">
