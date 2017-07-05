@@ -422,13 +422,14 @@
 </div>
 
 <div id="appianContainer">
-  <appian-action processModelUuid="0002df17-2239-8000-f92f-7f0000014e7a"></appian-action>
+  <!-- <appian-action processModelUuid="0002df17-2239-8000-f92f-7f0000014e7a"></appian-action> -->
 </div>
 
 <script>
   $("#appianContainer").hide();
 
   function showForm() {
+    $('<appian-action />').attr("id", "appianChart").attr("processModelUuid", "0002df17-2239-8000-f92f-7f0000014e7a").appendTo("#appianContainer");
     $("#appianContainer").show();
   }
 </script>
